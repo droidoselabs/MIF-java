@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomMaterialEditText">
+        <item name="android:layout_margin">@dimen/spacing_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="met_baseColor">@color/white</item>
+        <item name="met_errorColor">@color/white</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_floatingLabelAnimating">true</item>
+        <item name="met_floatingLabelTextColor">@color/white</item>
+        <item name="met_helperTextColor">@color/white</item>
+        <item name="met_primaryColor">@color/white</item>
+        <item name="met_textColor">@color/white</item>
+        <item name="met_textColorHint">@color/white</item>
+        <item name="met_underlineColor">@color/white</item>
+    </style>
+<style name="PrimaryButton">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/round_white_button</item>
+    <item name="android:layout_margin">@dimen/spacing_xxl</item>
+</style>
+</resources>
