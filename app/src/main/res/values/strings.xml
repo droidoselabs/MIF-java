@@ -50,11 +50,13 @@
     <string name="recipies">Recipes</string>
     <string name="workout_plans">Workout Plans</string>
     <string name="logout">Logout</string>
-    <string name="title_login">Login with </string>
+    <string name="title_login">Sign in</string>
     <string name="action_login">Sign In</string>
     <string name="action_login_process">Signing In …</string>
     <string name="action_login_error">Retry</string>
     <string name="action_login_complete">Signed In</string>
     <string name="more">+5 \n more</string>
     <string name="already_have_an_account">Already have an account ? Login</string>
+    <string name="welcomeBack">Welcome back!</string>
+    <string name="sign_in_via">sign in via facebook or google</string>
 </resources>
