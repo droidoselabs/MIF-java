@@ -5,10 +5,15 @@
     <dimen name="spacing_tiny">5dp</dimen>
     <dimen name="spacing_small">10dp</dimen>
     <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_semi_large">22dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
     <dimen name="spacing_xl">48dp</dimen>
     <dimen name="spacing_xxl">60dp</dimen>
+    <dimen name="spacing_xxxl">70dp</dimen>
 
     <!-- Font sizes-->
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
     <dimen name="font_medium">16sp</dimen>
     <dimen name="font_medium_plus">18sp</dimen>
     <dimen name="font_semi_large">20sp</dimen>

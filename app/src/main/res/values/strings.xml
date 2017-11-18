@@ -59,4 +59,7 @@
     <string name="already_have_an_account">Already have an account ? Login</string>
     <string name="welcomeBack">Welcome back!</string>
     <string name="sign_in_via">sign in via facebook or google</string>
+    <string name="sign_in_with">or sign in with</string>
+    <string name="action_forgot_password">Forgot your password ?</string>
+    <string name="action_need_an_account">Need an account ?</string>
 </resources>
