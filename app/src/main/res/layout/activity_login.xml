@@ -7,7 +7,7 @@
     android:background="@color/fragementBg"
     android:orientation="vertical"
     android:paddingTop="@dimen/spacing_large"
-    tools:context="in.droidose.missionindiafit.LoginActivity">
+    tools:context="in.droidose.missionindiafit.login.LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
