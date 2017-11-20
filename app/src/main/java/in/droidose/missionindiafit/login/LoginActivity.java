@@ -13,8 +13,9 @@ import butterknife.ButterKnife;
 import in.droidose.missionindiafit.BaseActivity;
 import in.droidose.missionindiafit.IntroActivity;
 import in.droidose.missionindiafit.R;
+import in.droidose.missionindiafit.utils.CustomAlertDialog;
 
-public class LoginActivity extends BaseActivity implements LoginView {
+public class LoginActivity extends BaseActivity implements LoginContractor.View {
     private static final String TAG = LoginActivity.class.getSimpleName();
     @BindView(R.id.etEmail)
     EditText etEmail;
@@ -26,7 +27,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
     TextView tvForgotPassword;
     @BindView(R.id.btnSignIn)
     AppCompatButton btnSignIn;
-    private LoginPresentor mLoginPresentor;
+    private LoginContractor.Presentor mLoginPresentor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,17 +82,17 @@ public class LoginActivity extends BaseActivity implements LoginView {
 
     @Override
     public void setEmailError(String errorMessage) {
-        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+        showSnackBar(etEmail, errorMessage);
     }
 
     @Override
     public void setPasswordError(String errorMessage) {
-        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+        showSnackBar(etPassword, errorMessage);
     }
 
     @Override
     public void showApiError(String errorMessage) {
-        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+        showSnackBar(btnSignIn, errorMessage);
     }
 
     @Override

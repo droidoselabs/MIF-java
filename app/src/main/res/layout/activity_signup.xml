@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragementBg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="@string/setup_your_profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large" />
+
+    <com.liangfeizc.RubberIndicator
+        android:id="@+id/rubber"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginStart="@dimen/spacing_small"
+        app:largeCircleColor="@color/lightBlue"
+        app:outerCircleColor="@color/white"
+        app:smallCircleColor="@color/lightBlue" />
+
+    <LinearLayout
+        android:id="@+id/llLayoutInflater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+        </LinearLayout>
+
+</LinearLayout>

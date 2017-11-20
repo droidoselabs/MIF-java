@@ -5,7 +5,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -18,11 +20,12 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * Created by rajatdhamija on 11/11/17.
  */
 
-public class BaseActivity extends AppCompatActivity implements View.OnClickListener,AppConstants {
+public class BaseActivity extends AppCompatActivity implements View.OnClickListener, AppConstants {
     private static final float DIM_AMOUNT = 0.6f;
-    private Dialog progressDialog;
+    private Dialog progressDialog, customDialog;
     private TextView tvProgress;
     private TextView innerProgress;
+    private AppCompatButton btnPositive, btnNegative;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
@@ -112,5 +115,23 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         return false;
+    }
+
+    /**
+     * show snackbar with message
+     *
+     * @param view    instance of view
+     * @param message message to be displayed
+     */
+    public void showSnackBar(View view, String message) {
+        Snackbar snackbar = Snackbar
+                .make(view, message, Snackbar.LENGTH_LONG)
+                .setAction(getString(R.string.text_ok), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                    }
+                });
+
+        snackbar.show();
     }
 }

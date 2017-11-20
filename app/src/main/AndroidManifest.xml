@@ -10,11 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".IntroActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".IntroActivity"></activity>
+        <activity android:name=".login.LoginActivity">
 
         </activity>
-        <activity android:name=".login.LoginActivity">
+        <activity android:name=".HomeActivity">
+
+        </activity>
+        <activity android:name=".signup.SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

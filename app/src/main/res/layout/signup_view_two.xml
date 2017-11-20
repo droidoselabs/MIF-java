@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/spacing_small"
+    android:layout_marginStart="@dimen/spacing_small"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/huge_size"
+        android:layout_height="@dimen/xlarge_size"
+        android:layout_gravity="center"
+        android:background="@drawable/circular_bg">
+
+        <View
+            android:id="@+id/view_center"
+            style="@style/GenderFragmentView"
+            android:background="@drawable/circular_bg_blue"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_center_black"
+            style="@style/GenderFragmentView"
+            android:background="@drawable/circular_bg"
+            android:visibility="gone" />
+
+
+        <FrameLayout
+            android:layout_width="@dimen/xlarge_size"
+            android:layout_height="@dimen/xlarge_size">
+
+            <View
+                android:id="@+id/view_male"
+                style="@style/View"
+                android:visibility="visible" />
+
+            <ImageView style="@style/ViewWithImage" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/xlarge_size"
+            android:layout_height="@dimen/xlarge_size">
+
+
+            <View
+                android:id="@+id/view_move"
+                style="@style/View" />
+
+            <ImageView
+                android:id="@+id/male"
+                style="@style/ViewWithImage" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/xlarge_size"
+            android:layout_height="@dimen/xlarge_size"
+            android:layout_marginStart="130dp">
+
+            <View
+                android:id="@+id/view_female"
+                android:layout_width="@dimen/xlarge_size"
+                android:layout_height="@dimen/xlarge_size"
+                android:background="@drawable/circular_male_gender"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/female"
+                android:layout_width="@dimen/spacing_xxl"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/spacing_tiny"
+                android:padding="19dp"
+                android:src="@drawable/ic_female" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

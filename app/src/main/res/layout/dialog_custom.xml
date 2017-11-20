@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/spacing_small"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_small"
+        android:textSize="@dimen/font_medium"
+        tools:text="@string/already_have_an_account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnPositive"
+            style="@style/DialogButton"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:text="@string/text_ok" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNegative"
+            style="@style/DialogButton"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:text="@string/text_cancel" />
+    </LinearLayout>
+</LinearLayout>

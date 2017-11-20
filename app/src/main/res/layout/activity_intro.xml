@@ -20,17 +20,12 @@
         android:layout_marginBottom="@dimen/spacing_xl"
         android:gravity="center"
         android:text="@string/already_have_an_account"
-        android:textSize="@dimen/font_medium"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_medium" />
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btnGetStarted"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:layout_above="@+id/tvLogin"
-        android:layout_marginBottom="@dimen/spacing_small"
-        android:layout_marginEnd="@dimen/spacing_xxl"
-        android:layout_marginStart="@dimen/spacing_xxl"
-        android:background="@drawable/round_white_button"
         android:text="@string/get_started" />
 </RelativeLayout>

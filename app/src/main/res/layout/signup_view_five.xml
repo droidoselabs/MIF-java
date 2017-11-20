@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fragementBg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/huge_size"
+        android:gravity="center"
+        android:text="@string/signing_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_huge" />
+
+    <ImageView
+        android:id="@+id/running"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/running"
+        android:gravity="center"
+        android:text="@string/you_are_almost_there"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium" />
+</RelativeLayout>

@@ -4,9 +4,8 @@ package in.droidose.missionindiafit.login;
  * Created by rajatdhamija on 18/11/17.
  */
 
-interface LoginInteractor {
+public interface LoginInteractor {
     interface OnLoginClickListener {
-
         /**
          * Email error
          */

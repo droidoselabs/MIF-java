@@ -1,5 +1,6 @@
 package in.droidose.missionindiafit.login;
 
+import in.droidose.missionindiafit.common.IFirebaseProvider;
 import in.droidose.missionindiafit.constants.AppConstants;
 import in.droidose.missionindiafit.utils.ValidateString;
 
@@ -8,9 +9,9 @@ import in.droidose.missionindiafit.utils.ValidateString;
  */
 
 class LoginInteractorImplementation implements LoginInteractor, AppConstants {
-    private FirebaseLoginService service;
+    private IFirebaseProvider service;
 
-    LoginInteractorImplementation(FirebaseLoginService service) {
+    LoginInteractorImplementation(IFirebaseProvider service) {
         this.service = service;
     }
 

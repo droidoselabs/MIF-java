@@ -63,4 +63,6 @@
     <string name="action_forgot_password">Forgot your password ?</string>
     <string name="action_need_an_account">Need an account ?</string>
     <string name="loading">Loading</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="oops">Oops !</string>
 </resources>

@@ -1,21 +1,23 @@
 package in.droidose.missionindiafit.login;
 
+import in.droidose.missionindiafit.common.FirebaseProvider;
+
 /**
  * Created by rajatdhamija on 18/11/17.
  */
-class LoginPresenterImplementation implements LoginPresentor, LoginInteractor.OnLoginClickListener {
+class LoginPresenterImplementation implements LoginContractor.Presentor, LoginInteractor.OnLoginClickListener {
 
     private LoginInteractor loginInterator;
-    private LoginView loginView;
+    private LoginContractor.View loginView;
 
     /**
      * Instantiates a new Login presenter implementation.
      *
      * @param loginView the login view
      */
-    LoginPresenterImplementation(LoginView loginView) {
+    LoginPresenterImplementation(LoginContractor.View loginView) {
         this.loginView = loginView;
-        this.loginInterator = new LoginInteractorImplementation(new LoginViaFirebase());
+        this.loginInterator = new LoginInteractorImplementation(new FirebaseProvider());
     }
 
 
