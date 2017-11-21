@@ -63,6 +63,7 @@
                 app:met_iconLeft="@drawable/password" />
 
             <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnKeepGoing"
                 style="@style/PrimaryButton"
                 android:background="@drawable/round_blue_button"
                 android:layout_marginTop="0dp"

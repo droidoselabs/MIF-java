@@ -8,7 +8,13 @@ import in.droidose.missionindiafit.signup.SignupInteractor;
  */
 
 public interface IFirebaseProvider {
-    void loginViaFirebase(String email, String password, LoginInteractor.OnFirebaseLogin firebaseLogin);
+    void loginViaFirebase(String email,
+                          String password,
+                          LoginInteractor.OnFirebaseLogin firebaseLogin);
 
-    void signupViaFirebase(String email, String password, SignupInteractor.OnFirebaseSignup firebaseSignup);
+    void signupViaFirebase(String name,
+                           String email,
+                           String password,
+                           String confirmPassword,
+                           SignupInteractor.OnFirebaseSignup firebaseSignup);
 }

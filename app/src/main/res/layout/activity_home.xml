@@ -5,78 +5,78 @@
     android:background="@color/fragementBg"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_small"
-        android:gravity="center"
-        android:text="@string/setup_your_profile"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_large" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/spacing_small"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/setup_your_profile"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/font_large" />-->
 
-    <com.liangfeizc.RubberIndicator
-        android:id="@+id/rubber"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginEnd="@dimen/spacing_small"
-        android:layout_marginStart="@dimen/spacing_small"
-        app:largeCircleColor="@color/lightBlue"
-        app:outerCircleColor="@color/white"
-        app:smallCircleColor="@color/lightBlue" />
+    <!--<com.liangfeizc.RubberIndicator-->
+        <!--android:id="@+id/rubber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_marginEnd="@dimen/spacing_small"-->
+        <!--android:layout_marginStart="@dimen/spacing_small"-->
+        <!--app:largeCircleColor="@color/lightBlue"-->
+        <!--app:outerCircleColor="@color/white"-->
+        <!--app:smallCircleColor="@color/lightBlue" />-->
 
-    <LinearLayout
-        android:id="@+id/viewOne"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing_xxxl"
-        android:gravity="center"
-        android:visibility="gone">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/viewOne"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/spacing_xxxl"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="visible">-->
 
-        <include layout="@layout/signup_view_one" />
-    </LinearLayout>
+        <!--<include layout="@layout/signup_view_one" />-->
+    <!--</LinearLayout>-->
 
-    <LinearLayout
-        android:id="@+id/viewTwo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing_xxxl"
-        android:gravity="center"
-        android:visibility="gone">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/viewTwo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/spacing_xxxl"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone">-->
 
-        <include layout="@layout/signup_view_two" />
-    </LinearLayout>
+        <!--<include layout="@layout/signup_view_two" />-->
+    <!--</LinearLayout>-->
 
-    <LinearLayout
-        android:id="@+id/viewThree"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing_xxxl"
-        android:gravity="center"
-        android:visibility="gone">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/viewThree"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/spacing_xxxl"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone">-->
 
-        <include layout="@layout/signup_view_three" />
-    </LinearLayout>
+        <!--<include layout="@layout/signup_view_three" />-->
+    <!--</LinearLayout>-->
 
-    <LinearLayout
-        android:id="@+id/viewFour"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing_xxxl"
-        android:gravity="center"
-        android:visibility="gone">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/viewFour"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/spacing_xxxl"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone">-->
 
-        <include layout="@layout/signup_view_four" />
-    </LinearLayout>
+        <!--<include layout="@layout/signup_view_four" />-->
+    <!--</LinearLayout>-->
 
-    <LinearLayout
-        android:id="@+id/viewFive"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/spacing_xxxl"
-        android:gravity="center"
-        android:visibility="visible">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/viewFive"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/spacing_xxxl"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone">-->
 
-        <include layout="@layout/signup_view_five" />
-    </LinearLayout>
+        <!--<include layout="@layout/signup_view_five" />-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

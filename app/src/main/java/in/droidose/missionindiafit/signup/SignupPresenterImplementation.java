@@ -6,7 +6,8 @@ import in.droidose.missionindiafit.common.FirebaseProvider;
  * Created by rajatdhamija on 20/11/17.
  */
 
-public class SignupPresenterImplementation implements SignupContractor.Presentor, SignupInteractor.OnKeepGoingClickListener {
+public class SignupPresenterImplementation implements SignupContractor.Presentor, SignupInteractor.OnKeepGoingClickListener,
+        SignupInteractor.OnGenderLayoutListener, SignupInteractor.OnWeightAndHeightSwipeListener, SignupInteractor.OnBodyTypeSwipeListener {
     private SignupInteractor signupInteractor;
     private SignupContractor.View signupVew;
 
@@ -82,13 +83,6 @@ public class SignupPresenterImplementation implements SignupContractor.Presentor
     }
 
     @Override
-    public void onProfileSetupComplete() {
-        if (signupVew != null) {
-            signupVew.navigateToHome();
-        }
-    }
-
-    @Override
     public void onFailure(String errorMessage) {
         if (signupVew != null) {
             signupVew.hideProgress();
@@ -101,21 +95,22 @@ public class SignupPresenterImplementation implements SignupContractor.Presentor
         if (signupVew != null) {
             signupVew.showProgress();
         }
-        signupInteractor.apiSignup(name, password, this);
+        signupInteractor.apiSignup(name, email, password, confirmPassword, this);
     }
 
     @Override
-    public void setGender(String gender) {
-        signupInteractor.setGender(gender);
+    public void onGenderScreenSwiped(String gender) {
+        signupInteractor.setGender(gender, this);
     }
 
     @Override
-    public void setHeightAndWeight(String weight, String height) {
-        signupInteractor.setWeightAndHeight(weight, height);
+    public void onWeightAndHeightScreenSwiped(String weight, String height) {
+        signupInteractor.setWeightAndHeight(weight, height, this);
     }
 
     @Override
-    public void setBodyType(String bodyType) {
-        signupInteractor.setBodyType(bodyType);
+    public void onBodyTypeSwiped(String bodyType) {
+        signupInteractor.setBodyType(bodyType, this);
     }
+
 }

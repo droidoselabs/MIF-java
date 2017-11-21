@@ -18,7 +18,9 @@ public class FirebaseProvider implements IFirebaseProvider {
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
-    public void loginViaFirebase(String email, String password, final LoginInteractor.OnFirebaseLogin firebaseLogin) {
+    public void loginViaFirebase(String email,
+                                 String password,
+                                 final LoginInteractor.OnFirebaseLogin firebaseLogin) {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -33,7 +35,11 @@ public class FirebaseProvider implements IFirebaseProvider {
     }
 
     @Override
-    public void signupViaFirebase(String email, String password, final SignupInteractor.OnFirebaseSignup firebaseSignup) {
+    public void signupViaFirebase(String name,
+                                  String email,
+                                  String password,
+                                  String confirmPassword,
+                                  final SignupInteractor.OnFirebaseSignup firebaseSignup) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

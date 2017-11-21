@@ -40,4 +40,14 @@ public class ValidateString implements AppConstants {
             return null;
         }
     }
+
+    public static String validateName(String name) {
+        if (name == null || name.isEmpty()) {
+            return ERROR_NAME_CANNOT_BE_EMPTY;
+        } else if (name.length() < NAME_MIN_LENGTH) {
+            return ERROR_NAME_CANNOT_BE_LESS_THAN_3_CHARACTERS;
+        } else {
+            return null;
+        }
+    }
 }

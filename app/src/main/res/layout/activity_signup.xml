@@ -25,12 +25,58 @@
         app:smallCircleColor="@color/lightBlue" />
 
     <LinearLayout
-        android:id="@+id/llLayoutInflater"
+        android:id="@+id/viewOne"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="visible">
-        </LinearLayout>
+
+        <include layout="@layout/signup_view_one" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/signup_view_two" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/signup_view_three" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewFour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/signup_view_four" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewFive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/signup_view_five" />
+    </LinearLayout>
 
 </LinearLayout>
